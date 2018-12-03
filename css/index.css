@@ -1,0 +1,285 @@
+*{
+    font-family: 'Nunito';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+   /* -----------Section Poster --------------------- */
+
+.logo{
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.logo h1{
+    font-size: 53px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+#logo2{
+ width: 456px;
+}
+
+
+h1{
+    font-size: 53px;
+}
+
+aside{
+    float: right;
+    width: 355px;
+    height: 513px;
+    z-index: 9;
+    position: relative;
+    padding: 9px;
+    overflow: overlay;
+}
+
+aside ul{
+    margin 20px;
+    padding 0;
+    list-style: none;
+    
+}
+
+.header-ul{
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+.temporada{
+    margin-right: 30px;
+    float: left;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.temporada:hover{
+    border-bottom: 3px solid green;
+    padding-bottom: 17px;
+
+}
+aside ul li .header-ep{
+    padding: 11px;
+    padding-left: 0;
+    border-bottom: 1px dotted #fff;
+
+}
+
+aside ul li .header-ep .play{
+    float: right;
+}
+
+aside ul li .header-ep a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+aside ul li .body-ep{
+    display: none;
+    transition: height 2s;
+    -webkit-transition: width 2s;
+    padding: 14px;
+}
+
+
+.poster{
+    background-image: url("https://1.bp.blogspot.com/-ksRdhwNe6LY/Wus7YqBzr1I/AAAAAAAAVdQ/Qn0yYyJvCoAP02ntphDTWHXx9OElabB_ACLcBGAs/s1600/terceira-temporada-penny-dreadful-netflix.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    box-shadow: inset 0 0 900px #000000;
+    position: relative;
+}
+
+
+.poster::after{
+    content: '';
+    width: 1px;
+    box-shadow:  0 0 90px 500px rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+}
+
+
+
+.play img{
+    width: 30px;
+}
+
+.poster::before {
+    content: '';
+    width: 100%;
+    box-shadow: 0px -13px 98px 101px rgba(0,0,0,0.7);
+    height: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+ /* Final Section Poster  */
+
+/* 
+      Section desc */
+
+.sinopse{
+    width:30%;
+    float: left;
+}
+.sinopse li{
+    display: inline-block;
+    width: 67px;
+    padding-top: 22px;
+    list-style: none;
+
+}
+
+
+.sinopse ul li:last-child{
+    width: 500px;
+}
+
+.desc{
+    min-height: 20vh;
+    clear: both;
+    overflow: hidden;
+    padding: 20px;
+    position:relative;
+    z-index:9;
+    background-color: #16171b;
+}
+
+.titulo-ul{
+    border-bottom: 2px solid white;
+    margin-bottom:20px ;
+    width:100%;
+    padding-bottom: 15px;
+}
+.titulo-desc{
+    font-size: 16px;
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 67px;
+}
+
+.titulo-desc:hover{
+    border-bottom: 2px solid green;
+    padding-bottom: 15px;
+    border-radius: 1%;
+}
+
+.telecine-logo{
+    position: absolute;
+    top: 22px;
+    right: 19px;
+}
+.sinopse li figcaption a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.sinopse-desc{
+    width: 70%;
+    float: right;
+}
+.box2{
+    clear: both;
+    display: none;
+}
+
+.elenco{
+    list-style: none;
+}
+
+.elenco li{
+    padding: 30px;
+    background-color: #16171b;
+    margin: 10px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 10px 5px 10px black;
+    width: 143px;
+    height: 80px;
+}
+
+#elenco:hover + .box2{
+    display: block;
+}
+
+.elenco li:hover{
+    transform: scale(1.5,1.5);
+}
+
+#episodios{
+    width: 226px;
+}
+
+
+
+/* 
+       MEDIA QUERIES */
+
+
+@media only screen and (max-width: 650px){
+    #logo2{
+        width:100%;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+    .titulo-desc{
+        font-size: 12px;
+        margin-right: 7px;
+     }
+
+     .sinopse {
+         width: 100%
+     }
+
+     .sinopse-desc{
+         width: 100%;
+     }
+     .sinopse li {
+        display: inline-block;
+        width: 65px;
+        padding-top: 22px;
+        list-style: none;
+        padding-bottom: 20px;
+     }
+     aside{
+         width: 100%;
+     }
+
+     .poster{
+         box-shadow: none;
+     }
+     .logo{
+        z-index: 9;
+        position: relative;
+     }
+
+     .elenco li{
+         width: 126px;
+     }
+}
+
+
+
+
